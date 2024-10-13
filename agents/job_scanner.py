@@ -27,5 +27,14 @@ def create_job_scan_task(agent, profile):
 
         Format the output as a numbered list.
         """,
-        agent=agent
+        agent=agent,
+        expected_output="""
+        A numbered list of the top 5 job recommendations with details such as:
+        1. Job title
+        2. Company name
+        3. Brief job description
+        4. Required skills
+        5. Salary range (if available)
+        6. Fit for the profile
+        """
     )
