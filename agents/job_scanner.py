@@ -45,5 +45,12 @@ def create_job_scan_task(agent, profile):
 
         Ensure you provide exactly 5 job recommendations in this format. Do not include any additional text before or after the job listings.
         """,
-        agent=agent
+        agent=agent,
+        expected_output="""A list of 5 job recommendations, each containing:
+        - Job title
+        - Company name
+        - Brief job description
+        - Required skills
+        - Salary range (if available)
+        - Reason for fit with the given profile"""
     )
