@@ -8,9 +8,10 @@ from dotenv import load_dotenv
 load_dotenv() 
 
 def main():
-    groq_api_key = os.environ.get("GROQ_API_KEY")
-    if groq_api_key is None:
-        raise ValueError("GROQ_API_KEY environment variable is not set")
+    # groq_api_key = os.environ.get("GROQ_API_KEY")
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if api_key is None:
+        raise ValueError("GROQ_API_KEY or OPENAI_API_KEY environment variable is not set")
     # set_verbose(True)
 
     st.title("AI Career Mentor")
