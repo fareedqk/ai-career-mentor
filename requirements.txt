@@ -4,3 +4,4 @@ crewai
 litellm
 groq
 python-dotenv
+pysqlite3-binary
